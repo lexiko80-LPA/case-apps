@@ -105,8 +105,8 @@ Namespace Data
               If y = m_revcloud._v.Id Then
                 ' This is the sheet
                 m_revcloud.SheetNumber = x.SheetNumber
-                m_revcloud.SheetName = x.ViewName
-                GoTo GotSheetData
+                                m_revcloud.SheetName = x.Name
+                                GoTo GotSheetData
               End If
             Next
           Next

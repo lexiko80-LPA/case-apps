@@ -133,11 +133,11 @@ Namespace Data
 
         Else
 
-          ' We know the previous view was not a sheet
-          ViewName = _v.ViewName
+                    ' We know the previous view was not a sheet
+                    ViewName = _v.Name
 
-          ' Is it placed on a sheet?
-          If _v.OwnerViewId.IntegerValue > 0 Then
+                    ' Is it placed on a sheet?
+                    If _v.OwnerViewId.IntegerValue > 0 Then
 
             ' It's Not a Sheet
             Dim m_v2id As New ElementId(_v.OwnerViewId.IntegerValue)

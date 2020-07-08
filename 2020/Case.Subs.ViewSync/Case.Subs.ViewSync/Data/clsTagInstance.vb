@@ -178,8 +178,8 @@ Namespace Data
       Get
         Try
           Dim m_view As View = TryCast(_fi.Document.GetElement(_fi.OwnerViewId), View)
-          Return m_view.ViewName
-        Catch
+                    Return m_view.Name
+                Catch
         End Try
         Return "{error}"
       End Get

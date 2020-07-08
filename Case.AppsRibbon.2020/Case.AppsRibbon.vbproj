@@ -211,9 +211,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)\*" "$(SolutionDir)\deploy\2019\"
-copy "$(TargetDir)\*" "$(SolutionDir)\deploy\2019\"
-copy "$(TargetDir)\*.addin" "$(SolutionDir)\deploy\"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)\*" "$(SolutionDir)\deploy\2020\"
+copy "$(TargetDir)\*" "$(SolutionDir)\deploy\2020\"
+copy "$(TargetDir)\*.addin" "$(SolutionDir)\deploy\"
+copy "$(TargetPath)" "%25programdata%25\Autodesk\Revit\Addins\2020\Case.Apps"
+copy "$(TargetDir)\*.addin" "%25programdata%25\Autodesk\Revit\Addins\2020"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
